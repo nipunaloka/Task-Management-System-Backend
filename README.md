@@ -3,6 +3,8 @@
 A full-stack **Task Management Web Application** built with modern technologies including **React**, **Node.js**, and **MongoDB**. Users can log in with Google, manage tasks, and export data as PDFs.
 
 ---
+![Dashboard](01TaskG.PNG)
+---
 
 ## ⚙️ Tech Stack
 
@@ -45,3 +47,8 @@ A full-stack **Task Management Web Application** built with modern technologies 
 ```bash
 git clone https://github.com/your-username/task-management-app.git
 cd task-management-app
+```
+---
+## ✨ Frontend
+
+- https://github.com/nipunaloka/Task-Management-System-Frontend.git
