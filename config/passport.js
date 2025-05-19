@@ -3,8 +3,9 @@ const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const User = require("../models/User");
 
-passport.serializeUser((user, done) => done(null, user.id));
-passport.deserializeUser((id, done) => User.findById(id).then(user => done(null, user)));
+//Session Handling
+passport.serializeUser((user, done) => done(null, user.id)); //Saves user ID to the session.
+passport.deserializeUser((id, done) => User.findById(id).then(user => done(null, user)));  //Fetches full user details from DB using ID.
 
 passport.use(
   new GoogleStrategy({

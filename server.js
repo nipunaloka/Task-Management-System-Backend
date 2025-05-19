@@ -24,7 +24,7 @@ app.use(
 // Body parser
 app.use(express.json());
 
-// ✅ Use express-session instead of cookie-session
+// Use express-session instead of cookie-session
 app.use(
   session({
     secret: process.env.SESSION_SECRET || "your-secret",
